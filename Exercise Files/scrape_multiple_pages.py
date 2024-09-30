@@ -8,7 +8,7 @@ from time import sleep
 for page_number in range(1,4):
 
     # define the url
-    url = "https://www.feedbooks.com/publicdomain/browse/top?lang=en&page="+str(page_number)
+    url = "https://catalog.feedbooks.com/publicdomain/browse/top?cat=FBFIC000000&lang=all&page="+str(page_number)
 
     # send a request to get html code from that url
     response = requests.get(url, headers={"Accept": "text/html"}) 
